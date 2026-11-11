@@ -29,6 +29,7 @@ function checkWinner(){
         for(let i = 0; i < win.length; i++){
             if(cells[win[i][0]].textContent == "X" && cells[win[i][1]].textContent == "X" && cells[win[i][2]].textContent == "X"){
                 alert("Player 1 wins!");
+                updateScore(1, parseInt(document.querySelector(`.player[data-player="1"]`).textContent.split(" = ")[1]) + 1);
             }
         }
     }
@@ -36,10 +37,15 @@ function checkWinner(){
         for(let i = 0; i < win.length; i++){
             if(cells[win[i][0]].textContent == "O" && cells[win[i][1]].textContent == "O" && cells[win[i][2]].textContent == "O"){
                 alert("Player 2 wins!");
+                updateScore(2, parseInt(document.querySelector(`.player[data-player="2"]`).textContent.split(" = ")[1]) + 1);
             }
         }
     }
 }
 
+function updateScore(player, score){
+    let playerElement = document.querySelector(`.player[data-player="${player}"]`);
+    playerElement.textContent = `Player ${player} = ${score}`;
+}
 
 
