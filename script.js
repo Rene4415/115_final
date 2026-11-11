@@ -1,15 +1,15 @@
-function playerOne(){
-    let player1 = document.getElementById("player1");
-    document.addEventListener("click", function() {
-        player1.textContent ="X"
-    });
+let currentPlayer = 1;
+
+function playerTurnSwitch(player){
+    if (currentPlayer === 1) {
+        player.textContent ="X"
+        currentPlayer = 2;
+    } else {
+        player.textContent ="O"
+        currentPlayer = 1;
+    }
 }
-function playerTwo(){
-    let player2 = document.getElementById("player2");
-    document.addEventListener("click", function() {
-        player2.textContent ="O"
-    });
-}
+
 
 
 
