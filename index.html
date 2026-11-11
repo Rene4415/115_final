@@ -13,15 +13,15 @@
     <div class="player" data-player="2">Player 2 = 0</div>
 </div>
 <div id="board">
-    <div class="cell"  data-row="0" data-col="0" onclick="playerTurnSwitch(this)"></div>
-    <div class="cell"  data-row="0" data-col="1" onclick="playerTurnSwitch(this)"></div>
-    <div class="cell"  data-row="0" data-col="2" onclick="playerTurnSwitch(this)"></div>
-    <div class="cell"  data-row="1" data-col="0" onclick="playerTurnSwitch(this)"></div>
-    <div class="cell"  data-row="1" data-col="1" onclick="playerTurnSwitch(this)"></div>
-    <div class="cell"  data-row="1" data-col="2" onclick="playerTurnSwitch(this)"></div>
-    <div class="cell"  data-row="2" data-col="0" onclick="playerTurnSwitch(this)"></div>
-    <div class="cell"  data-row="2" data-col="1" onclick="playerTurnSwitch(this)"></div>
-    <div class="cell"  data-row="2" data-col="2" onclick="playerTurnSwitch(this)"></div>
+    <div class="cell"  data-row="0" data-col="0" onclick="playerTurnSwitch(this);checkWinner()"></div>
+    <div class="cell"  data-row="0" data-col="1" onclick="playerTurnSwitch(this);checkWinner()"></div>
+    <div class="cell"  data-row="0" data-col="2" onclick="playerTurnSwitch(this);checkWinner()"></div>
+    <div class="cell"  data-row="1" data-col="0" onclick="playerTurnSwitch(this);checkWinner()"></div>
+    <div class="cell"  data-row="1" data-col="1" onclick="playerTurnSwitch(this);checkWinner()"></div>
+    <div class="cell"  data-row="1" data-col="2" onclick="playerTurnSwitch(this);checkWinner()"></div>
+    <div class="cell"  data-row="2" data-col="0" onclick="playerTurnSwitch(this);checkWinner()"></div>
+    <div class="cell"  data-row="2" data-col="1" onclick="playerTurnSwitch(this);checkWinner()"></div>
+    <div class="cell"  data-row="2" data-col="2" onclick="playerTurnSwitch(this);checkWinner()"></div>
 </div>
 <script src="script.js"></script>
 </body>
