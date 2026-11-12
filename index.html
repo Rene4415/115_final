@@ -8,20 +8,21 @@
 </head>
 <body>
 <h2>Tic Tac Toe</h2>
-<div id="score">
-    <div class="player" data-player="1">Player 1 = 0</div>
-    <div class="player" data-player="2">Player 2 = 0</div>
+<div id="players">
+    <div class="player" data-player="1">Player 1 = 0 - 0 - 0</div>
+    <div class="player" data-player="2">Player 2 = 0 - 0 - 0</div>
 </div>
 <div id="board">
-    <div class="cell"  data-row="0" data-col="0" onclick="playerTurnSwitch(this);checkWinner()"></div>
-    <div class="cell"  data-row="0" data-col="1" onclick="playerTurnSwitch(this);checkWinner()"></div>
-    <div class="cell"  data-row="0" data-col="2" onclick="playerTurnSwitch(this);checkWinner()"></div>
-    <div class="cell"  data-row="1" data-col="0" onclick="playerTurnSwitch(this);checkWinner()"></div>
-    <div class="cell"  data-row="1" data-col="1" onclick="playerTurnSwitch(this);checkWinner()"></div>
-    <div class="cell"  data-row="1" data-col="2" onclick="playerTurnSwitch(this);checkWinner()"></div>
-    <div class="cell"  data-row="2" data-col="0" onclick="playerTurnSwitch(this);checkWinner()"></div>
-    <div class="cell"  data-row="2" data-col="1" onclick="playerTurnSwitch(this);checkWinner()"></div>
-    <div class="cell"  data-row="2" data-col="2" onclick="playerTurnSwitch(this);checkWinner()"></div>
+    <div class="cell"  data-row="0" data-col="0" onclick="playerTurnSwitch(this);checkWinner();tieGame();"></div>
+    <div class="cell"  data-row="0" data-col="1" onclick="playerTurnSwitch(this);checkWinner();tieGame();"></div>
+    <div class="cell"  data-row="0" data-col="2" onclick="playerTurnSwitch(this);checkWinner();tieGame();"></div>
+    <div class="cell"  data-row="1" data-col="0" onclick="playerTurnSwitch(this);checkWinner();tieGame();"></div>
+    <div class="cell"  data-row="0" data-col="2" onclick="playerTurnSwitch(this);checkWinner();tieGame();"></div>
+    <div class="cell"  data-row="0" data-col="1" onclick="playerTurnSwitch(this);checkWinner();tieGame();"></div>
+    <div class="cell"  data-row="0" data-col="0" onclick="playerTurnSwitch(this);checkWinner();tieGame();"></div>
+    <div class="cell"  data-row="2" data-col="1" onclick="playerTurnSwitch(this);checkWinner();tieGame();"></div>
+    <div class="cell"  data-row="2" data-col="2" onclick="playerTurnSwitch(this);checkWinner();tieGame();"></div>
+    <button onclick="resetScoreboard(this)">Reset Scoreboard</button>
 </div>
 <script src="script.js"></script>
 </body>
